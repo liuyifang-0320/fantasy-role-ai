@@ -8,6 +8,8 @@ backend/venv/
 frontend/node_modules/
 frontend/dist/
 frontend/unpackage/dist/
+personal-site/node_modules/
+personal-site/dist/
 tests/reports/
 .env
 *.log
