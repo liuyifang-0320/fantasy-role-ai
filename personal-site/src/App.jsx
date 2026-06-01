@@ -148,10 +148,14 @@ function NeuralCanvas() {
       frame = requestAnimationFrame(draw);
       ctx.clearRect(0, 0, width, height);
 
-      ctx.fillStyle = "#050505";
+      const backdrop = ctx.createLinearGradient(0, 0, width, height);
+      backdrop.addColorStop(0, "#fbfaf7");
+      backdrop.addColorStop(0.5, "#f4f2ed");
+      backdrop.addColorStop(1, "#ffffff");
+      ctx.fillStyle = backdrop;
       ctx.fillRect(0, 0, width, height);
 
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.035)";
+      ctx.strokeStyle = "rgba(12, 12, 10, 0.045)";
       ctx.lineWidth = 1;
       for (let x = 0; x < width; x += 72) {
         ctx.beginPath();
@@ -190,7 +194,7 @@ function NeuralCanvas() {
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 138) {
             const alpha = (1 - dist / 138) * 0.16;
-            ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
+            ctx.strokeStyle = `rgba(12, 12, 10, ${alpha})`;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
@@ -201,7 +205,7 @@ function NeuralCanvas() {
 
       points.forEach((point, index) => {
         const pulse = 0.82 + Math.sin(Date.now() / 900 + index) * 0.12;
-        ctx.fillStyle = index % 7 === 0 ? "rgba(255, 255, 255, 0.82)" : "rgba(210, 210, 205, 0.54)";
+        ctx.fillStyle = index % 7 === 0 ? "rgba(10, 10, 8, 0.52)" : "rgba(70, 70, 64, 0.26)";
         ctx.beginPath();
         ctx.arc(point.x, point.y, point.r * pulse, 0, Math.PI * 2);
         ctx.fill();
