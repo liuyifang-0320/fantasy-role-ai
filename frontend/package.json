@@ -1,0 +1,27 @@
+{
+  "name": "fantasy-role-ai-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev:h5": "node ./node_modules/@dcloudio/vite-plugin-uni/bin/uni.js -p h5",
+    "build:h5": "node ./node_modules/@dcloudio/vite-plugin-uni/bin/uni.js build -p h5",
+    "dev:mp-weixin": "node ./node_modules/@dcloudio/vite-plugin-uni/bin/uni.js -p mp-weixin",
+    "build:mp-weixin": "node ./node_modules/@dcloudio/vite-plugin-uni/bin/uni.js build -p mp-weixin"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-1000920260516001",
+    "@dcloudio/uni-components": "3.0.0-alpha-1000920260516001",
+    "@dcloudio/uni-h5": "3.0.0-alpha-1000920260516001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-1000920260516001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-1000920260516001",
+    "sass-embedded": "1.99.0",
+    "vite": "8.0.13",
+    "vue": "3.5.34"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "3.4.31"
+  }
+}

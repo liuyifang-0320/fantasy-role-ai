@@ -1,0 +1,94 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "我的数字人",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/projects/index",
+      "style": {
+        "navigationBarTitleText": "剧本项目",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "用户中心",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/project-detail/index",
+      "style": {
+        "navigationBarTitleText": "项目详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/create-character/index",
+      "style": {
+        "navigationBarTitleText": "创建数字人",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/generate-result/index",
+      "style": {
+        "navigationBarTitleText": "生成结果",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/character-detail/index",
+      "style": {
+        "navigationBarTitleText": "角色详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/character-settings/index",
+      "style": {
+        "navigationBarTitleText": "角色调教",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/pet-assets/index",
+      "style": {
+        "navigationBarTitleText": "桌宠资产",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/index",
+      "style": {
+        "navigationBarTitleText": "聊天",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/memory/index",
+      "style": {
+        "navigationBarTitleText": "记忆管理",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/settings/index",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "幻梦数字人",
+    "navigationBarBackgroundColor": "#130c2f",
+    "backgroundColor": "#130c2f"
+  }
+}
